@@ -22,3 +22,13 @@
 @media (max-width: 520px) {
   .lg-cta__inner { padding-inline: 16px; }
 }
+
+/* Highlighted word: keep its yellow box from overlapping the lines above and below */
+.lg-cta__title { line-height: 1.12; }
+.lg-cta__title span {
+  display: inline-block;
+  line-height: 1.05;
+  padding: .04em .14em .02em;
+  margin: .12em 0;
+  vertical-align: middle;
+}
