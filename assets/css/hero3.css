@@ -1,0 +1,32 @@
+/* Hero board: keep names and prices on one line, no wrapping */
+.lg-board {
+  width: min(320px, 100%);
+  justify-self: end;
+  padding: 26px 24px 22px;
+}
+.lg-board__head { font-size: 1.6rem; }
+.lg-board__list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  font-size: .95rem;
+}
+.lg-board__list li > span:first-child { flex: 0 0 auto; }
+.lg-board__dots {
+  flex: 1 1 auto;
+  min-width: 12px;
+  border-bottom: 2px dotted rgba(255, 255, 255, .45);
+  height: 0;
+  margin: 0 4px;
+}
+.lg-board__list li > span:last-child {
+  flex: 0 0 auto;
+  font-weight: 700;
+  color: var(--brass);
+}
+.lg-board__rating { white-space: nowrap; }
+@media (min-width: 900px) {
+  .lg-hero__grid { grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr); }
+}
+.lg-hero__title { font-size: clamp(3rem, 7vw, 6.2rem); }
