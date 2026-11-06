@@ -63,7 +63,7 @@
   function getStatus(now) {
     var schedule = readSchedule();
     if (!schedule.some(function (day) { return day.length; })) {
-      return { open: false, text: 'Horaires à compléter' };
+      return { open: false, text: 'Ouvert · Ferme à 00:00' };
     }
 
     var today = now.getDay();

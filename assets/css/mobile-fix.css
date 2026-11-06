@@ -1,0 +1,24 @@
+/* Closing call-to-action: keep the title and buttons inside the screen on phones */
+.lg-cta__title {
+  font-size: clamp(2.1rem, 9vw, 3.6rem);
+  line-height: 1;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+.lg-cta__title span { white-space: nowrap; }
+.lg-cta__status { overflow-wrap: anywhere; }
+.lg-cta__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+.lg-cta__actions .lg-btn {
+  width: 100%;
+  justify-content: center;
+  white-space: normal;
+  text-align: center;
+}
+@media (max-width: 520px) {
+  .lg-cta__inner { padding-inline: 16px; }
+}
